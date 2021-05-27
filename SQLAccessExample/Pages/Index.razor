@@ -1,0 +1,55 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@if (myData != null)
+{
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    ID
+                </td>
+                <td>
+                    Title
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in myData)
+            {
+                <tr>
+                    <td>
+                        @item.PK_MyDataStructure
+                    </td>
+                    <td>
+                        @item.Title
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Loading...</p>
+}
+@inject SQLAccessExample.Data.ISQLAccess sql
+@code {
+
+
+    List<Model.MyDataStructure> myData;
+    protected override async Task OnInitializedAsync()
+    {
+        await load();
+    }
+
+    protected async Task load()
+    {
+        myData = await sql.SELECT_MyData("id", "title");
+    }
+}

@@ -3,7 +3,7 @@
 ### NuGet Packages installed:
 * Dapper (https://github.com/DapperLib/Dapper)
 * System.Data.SqlClient 
-* 
+
 *How to install these NuGet Packages: https://github.com/CodeGlitch/NuGet_Packages_VS2019*
 
 ### Files changed/created:

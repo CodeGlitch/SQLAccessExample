@@ -2,8 +2,8 @@
 
 ### NuGet Packages installed:
 * Dapper (https://github.com/DapperLib/Dapper)
-* System.Data.SqlClient
-**(How to install these NuGet Packages: https://github.com/CodeGlitch/NuGet_Packages_VS2019)
+* System.Data.SqlClient 
+*How to install these NuGet Packages: https://github.com/CodeGlitch/NuGet_Packages_VS2019*
 
 ### Files changed/created:
 * Model -> MyDataStructure.cs (Created new item of type Class as an example)

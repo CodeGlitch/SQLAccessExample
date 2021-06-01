@@ -1,3 +1,5 @@
+# Accessing SQL using blazor server
+
 *WARNING: You will need to create your SQL Server/DB/Stored Procedure for this to work, this project is just a usage example*
 
 ### NuGet Packages installed:
